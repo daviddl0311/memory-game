@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="preload" href="js/app.js" as="script">
+    <link rel="preload" href="css/css.css" as="style">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="grid center2 gap2">
+        <h1 class="center">Memory Game</h1>
+        <p class="center text">Encuentra todos los pares</p>
+    </div>
+    <div class="title center gap">
+        <div class="mov">
+            <p>Movimientos: <span id="mov">0</span></p>
+        </div>
+        <div>
+            <button id="btn">Nuevo Juego</button>
+        </div>
+    </div>
+    <section class="container center flex flex-wrap">
+        <div class="card" data-info="canva">
+            <img src="img/canva.svg" alt="Canva" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="canva">
+            <img src="img/canva.svg" alt="Canva" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="discord">
+            <img src="img/discord.svg" alt="Discord" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="discord">
+            <img src="img/discord.svg" alt="Discord" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="javascript">
+            <img src="img/javascript.svg" alt="JS" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="javascript">
+            <img src="img/javascript.svg" alt="JS" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="react">
+            <img src="img/react_light.svg" alt="React" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="react">
+            <img src="img/react_light.svg" alt="React" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="tailwindcss">
+            <img src="img/tailwindcss.svg" alt="Tailwind CSS" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="tailwindcss">
+            <img src="img/tailwindcss.svg" alt="Tailwind CSS" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="lovable">
+            <img src="img/lovable.svg" alt="Lovable" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+        <div class="card" data-info="lovable">
+            <img src="img/lovable.svg" alt="Lovable" class="front-face">
+            <img src="img/Logo.svg" alt="Logo Dev" class="back-face">
+        </div>
+    </section>
+
+    <div class="message grid gap2">
+        <h2 class="title-fin">
+            ¡Felicitaciones!
+        </h2>
+        <p class="text-fin"></p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

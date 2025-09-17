@@ -1,0 +1,127 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: system-ui;
+    background-color: #1e1241;
+}
+h1 {
+    font-size: 2.6em;
+    color: #fff;
+}
+
+
+.space {
+    justify-content: space-between;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center2 {
+    place-content: center;
+}
+.gap {
+    gap: 4rem;
+}
+.gap2 {
+    gap: .5rem;
+}
+
+/* TITLE */
+.title {
+    padding: 2rem;
+}
+.text {
+    font-size: clamp(15px, 3vw, 18px);
+    color: #bbbbbb;
+}
+.mov {
+    color: #fff;
+    background-color: rgb(52, 176, 248);
+}
+#btn {
+    color: #fff;
+    font-family: system-ui;
+    background: linear-gradient(150deg, rgb(147, 4, 230), rgb(230, 77, 103));
+}
+.mov,
+#btn {
+    font-size: clamp(12px, 3vw, 15px);
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+}
+/* CONTAINER */
+.container {
+    width: clamp(300px, 80vw, 1000px);
+    gap: 1rem;
+    margin: auto;
+    perspective: 2000px;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+/* CARTAS */
+.card {
+    display: grid;
+    place-content: center;
+    position: relative;
+    cursor: pointer;
+    width: clamp(85px, 20vw, 200px);
+    height: clamp(85px, 20vw, 200px);
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .7s;
+}
+.card:active {
+    transform: scale(.97);
+}
+.card.flip {
+    transform: rotateY(180deg);
+}
+.front-face {
+    transform: rotateY(180deg);
+}
+.front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 3.4rem;
+    position: absolute;
+    backface-visibility: hidden;
+}
+/* TEXTO FINAL */
+.message {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1rem;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity .3s;
+}
+.title-fin, .text-fin {
+    font-size: clamp(13px, 3vw, 15px);
+}
+
+@media (width < 1000px) {
+    .front-face, .back-face {
+        padding: 1rem;
+    }
+}
